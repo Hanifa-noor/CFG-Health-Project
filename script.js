@@ -1,7 +1,6 @@
 // Newsletter form JS
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector(".newsletter-form");
-  
     form.addEventListener("submit", function(event) {
       event.preventDefault();
   

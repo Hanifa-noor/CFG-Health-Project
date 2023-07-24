@@ -1,7 +1,7 @@
 /* header styles */
 .header {
 width: 100%;
-background-color: grey;
+background-color: #343a40;
 }
 
 .header-wrap {
@@ -28,14 +28,14 @@ width: 30%
 
 .nav-item {
     border-radius: 100px;
-    background-color: whitesmoke;
+    background-color: #4c91af96;
     width: 9.5%;
     justify-content: center;
     display: flex;
 }
 
 .nav-item a {
-    color: #222;
+    color: #f8f9fa;
     text-decoration: none;
     font-size: 30px;
     align-self: center;
@@ -47,47 +47,63 @@ width: 30%
 /* footer styles */
 .footer-wrap {
     max-width: 100%;
-    padding: 30px 60px;
-    background-color: grey;
+    padding: 50px 50px;
+    background-color: #343a40;
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
+    align-items: center;
 }
+
 .footer-left {
-    width: 25%;
+    width: 100%;
+    max-width: 27%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
+    align-self: stretch;
+    row-gap: 25px;
+    text-align: center;
 }
+
 .cfg-text-wrap {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .cfg-text-wrap h4 {
-    margin-bottom: unset;
+    margin: unset;
     letter-spacing: 1.5px;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
 }
 
 .footer-names {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .footer-names h5 {
-    margin-top: unset; 
+    margin: unset; 
     font-weight: 400;
+    text-decoration: none;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 
 /* footer menu styles */
 .footer-center {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 30%;
+    align-self: stretch;
+    width: 100%;
+    max-width: 35%;
+    text-align: center;
+    row-gap: 25px;
   }
   
   .explore-menu {
@@ -95,15 +111,19 @@ width: 30%
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 20px;
   }
   
   .explore-title {
-    margin-bottom: 10px;
+    margin: unset;
     text-transform: capitalize;
     width: 100%;
     display: flex;
     justify-content: center;
     letter-spacing: 1.5px;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
   }
 
   .nav-menu {
@@ -113,7 +133,7 @@ width: 30%
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
   }
   
   .explore-item {
@@ -123,16 +143,25 @@ width: 30%
   
   .explore-item a {
     text-decoration: none;
-    color: #000;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    transition: font-size 0.2s;
   }
   
+  .explore-item a:hover {
+    font-size: 18px;
+  }
 
 /* Newsletter form styles */
 .footer-right {
-    width: 25%;
+    width: 100%;
+    max-width: 27%;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    text-align: center;
+    align-self: stretch;
 }
 
 .newsletter-form-wrap {
@@ -144,12 +173,15 @@ width: 30%
 }
 
 .form-title {
-    margin-bottom: 10px;
+    margin: unset;
     text-transform: capitalize;
     width: 100%;
     display: flex;
     justify-content: center;
     letter-spacing: 1.5px;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
 }
 
 .newsletter-form {
@@ -162,15 +194,106 @@ width: 30%
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px 0px 0px 5px;
-    width: 70%;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
 }
 
 .newsletter-form button {
     padding: 10px;
     background-color: #4c91af;
-    color: #fff;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     border: 1px solid #4c91af;
     border-radius: 0px 5px 5px 0px;
     cursor: pointer;
-    width: 30%
+    width: 60%
 }
+
+/* Footer responsiveness */
+/* Screens less than 992px */
+@media (max-width: 991px) {
+    .footer-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      gap: 30px;
+    }
+  
+    .footer-left, .footer-center, .footer-right {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-left {
+      row-gap: 20px;
+    }
+  
+    .footer-center {
+      margin-top: 20px;
+    }
+
+    .newsletter-form {
+        width: 80%;
+    }
+  }
+  
+  /* Screens less than 786px */
+  @media (max-width: 785px) {
+    .footer-left, .footer-center, .footer-right {
+      width: 100%;
+    }
+  
+    .footer-wrap {
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .footer-left {
+      row-gap: 15px;
+    }
+  
+    .footer-names, .nav-menu {
+      gap: 8px;
+      flex-direction: column; /* Change to vertical layout */
+    }
+  }
+  
+  /* Screens less than 480px */
+  @media (max-width: 479px) {
+    .footer-wrap {
+      padding: 10px;
+    }
+  
+    .footer-left {
+      width: 100%;
+      row-gap: 10px;
+    }
+  
+    .footer-center {
+      width: 100%;
+    }
+  
+    .newsletter-form {
+      flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"] {
+        border-radius: 5px;
+    }
+  
+    .newsletter-form input[type="email"],
+    .newsletter-form button {
+      width: 100%;
+    }
+  
+    .newsletter-form button {
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  }
+  
