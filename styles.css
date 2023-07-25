@@ -1,0 +1,207 @@
+#body {
+    background-color: #343a40;
+    width: 100% 
+}
+
+#main-section {
+    padding: 20px 150px;
+    max-width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    max-width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #68c3ea;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+  }
+  
+  #card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .health-card {
+    max-width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .card-subtitle-wrap {
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .card-subtitle {
+    margin: 0px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #68c3ea;
+    letter-spacing: 2px;
+  }
+  
+  .card-image-wrap {
+    text-align: center;
+  }
+
+  .card-health-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    object-fit: cover;
+  }
+ 
+  .card-content-wrap {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card-content {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    max-width: 100%;
+    color: #f8f9fa;
+    margin: 0px;
+    letter-spacing: 1.5px;
+    line-height: 24px;
+  }
+
+  #content-1 ul {
+    text-align: left;
+  }
+
+  #content-1 li {
+    margin-bottom: 20px;
+  }
+
+  #content-2 ul {
+    text-align: left;
+  }
+
+  #content-2 li {
+    margin-bottom: 20px;
+  }
+
+  #content-3 ul {
+    text-align: left;
+  }
+
+  #content-3 li {
+    margin-bottom: 20px;
+  }
+
+  .card-content a {
+    color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+
+  .card-content a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  #health-card-2 .card-image-wrap {
+    order: 3;
+  }
+  
+  #health-card-2 .card-subtitle-wrap {
+    order: 1;
+  }
+  
+  #health-card-2 .card-content-wrap {
+    order: 2;
+  }
+  
+
+/* Responsiveness */
+/* screensizes less than 1430px */
+@media (max-width: 1430px) {
+    .card-health-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* screensizes less than 1200px */
+@media (max-width: 1430px) {
+    #main-section {
+        padding: 20px 30px;
+    }
+
+    .card-health-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* screensizes less than 992px */
+@media (max-width: 991px) {
+    #main-section {
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .health-card {
+        max-width: 80%;
+    }
+
+    #card-wrap {
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    #health-card-2 .card-image-wrap {
+        order: 2;
+      }
+      
+      #health-card-2 .card-subtitle-wrap {
+        order: 1;
+      }
+      
+      #health-card-2 .card-content-wrap {
+        order: 3;
+      }
+}
+
+/* screensizes less than 768px */
+@media (max-width: 767px) {
+    #main-section {
+        padding: 20px 30px;
+    }
+    .health-card {
+        max-width: 100%;
+    }
+    
+}
+
+/* screensizes less than 480px */
+@media (max-width: 479px) {
+    #main-section {
+        padding: 20px 20px;
+    }
+
+    .card-health-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-content {
+        font-size: 18px;
+    }
+}
