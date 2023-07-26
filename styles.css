@@ -1,3 +1,30 @@
+/*about page styles*/
+.card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #426d81;
+}
+
+.about-btn {
+    padding: 10px;
+    background-color: #4c91af;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #4c91af;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    width: 60%
+}
+
+.about-btn:hover {
+    background-color: #255265;
+}
+
 
 /*home page styles*/
 #main-body {
