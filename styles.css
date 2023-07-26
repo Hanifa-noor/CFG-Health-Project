@@ -332,17 +332,6 @@
     font-size: 20px;
   }
   
-  #health-card-2 .card-image-wrap {
-    order: 3;
-  }
-  
-  #health-card-2 .card-subtitle-wrap {
-    order: 1;
-  }
-  
-  #health-card-2 .card-content-wrap {
-    order: 2;
-  }
   
 
 /* Responsiveness */
