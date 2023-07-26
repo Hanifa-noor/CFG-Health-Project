@@ -126,6 +126,8 @@
     }
 }
 
+
+
 /* exercise page styles */
 .body {
     background-color: #426d81;
@@ -337,11 +339,40 @@
 }
 
 
+/*nutrition page bootstrap styles changed*/
+.background.bg-dark {
+    background-color: #426d81!important; 
+  }
+  
+  .background.bg-dark .card-title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f8f9fa;
+    letter-spacing: 2px;
+  }
+
+  .background.bg-dark .card-text {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 100%;
+    color: #f8f9fa;
+    margin: 0px;
+    letter-spacing: 1.5px;
+    line-height: 24px; 
+  }
+
+
+
 
 /* header styles */
     .header {
         max-width: 100%;
-        background-color: #343a40;
+        background-color: #343a40!important;
     }
     
     .header-wrap {
@@ -358,6 +389,10 @@
     
     .header-logo-image {
         width: 100px;
+    }
+
+    .header-logo-image:hover {
+        transform: scale(1.25);
     }
     
     .nav-bar-wrap {
@@ -403,6 +438,7 @@
     
     .nav-item:hover a {
         font-size: 18px;
+        color: #f8f9fa;
     }
     
  
@@ -463,6 +499,7 @@
     .nav-item:hover a {
         font-size: 12.5px;
     }
+    
     .header-logo {
         max-width: 100%;
         text-align: center;
