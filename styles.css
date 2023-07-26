@@ -60,12 +60,13 @@
 }
 
 /* exercise page styles */
-#body {
-    background-color: #343a40;
-    width: 100% 
+.body {
+    background-color: #426d81;
+    width: 100%;
+    margin: 0px;
 }
 
-#main-section {
+.main-section-class {
     padding: 20px 150px;
     max-width: 100%;
 }
@@ -76,12 +77,12 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #68c3ea;
+    color: #f8f9fa;
     text-transform: uppercase;
     letter-spacing: 2.5px;
   }
   
-  #card-wrap {
+  .card-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,9 +108,9 @@
   
   .card-subtitle {
     margin: 0px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 500;
-    color: #68c3ea;
+    color: #f8f9fa;
     letter-spacing: 2px;
   }
   
@@ -223,7 +224,7 @@
         max-width: 80%;
     }
 
-    #card-wrap {
+    .card-wrap {
         justify-content: center;
         gap: 30px;
     }
@@ -804,7 +805,7 @@ a:hover {
     color: #A8C4C3;
 }
 
-#h2 {
+#h3 {
     position: absolute;
     left: 640px;
     bottom: 600px;
