@@ -28,14 +28,14 @@
     margin-bottom: 35px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    color: #44719e;
+    color: #343a40;
 }
 
 #home-wrap p {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 80px;
     font-family: 'Quicksand', sans-serif;
-    color: #44719e;
+    color: #343a40;
     font-weight: 400;
 }
 
@@ -57,6 +57,73 @@
 
 #home-newsletter-btn:hover {
     background-color: #255265;
+}
+
+/* home responsiveness */
+/* Screens less than 992px */
+@media (max-width: 991px) {
+    #home-text-wrap {
+        width: 60%;
+    }
+}  
+
+/* Screens less than 768px */
+@media (max-width: 767px) {
+    #home-text-wrap {
+        width: 100%;
+        text-align: center;
+    }
+    #home-wrap {
+        justify-content: center;
+    }
+}  
+
+/* Screens less than 480px */
+@media (max-width: 479px) {
+    #home-nav {
+        max-width: 25%;
+        padding: 44px 5px;
+    }
+
+    #home-nav-a {
+        padding: 0px 0px;
+    }
+
+    #nutrition-nav {
+        max-width: 25%;
+        padding: 44px 5px;
+    }
+
+    #nutrition-nav-a {
+        padding: 0px 0px;
+    }
+
+    #exercise-nav {
+        max-width: 25%;
+        padding: 44px 5px;
+    }
+
+    #exercise-nav-a {
+        padding: 0px 0px;
+    }
+
+    #social-nav {
+        max-width: 25%;
+        padding: 44px 5px;
+    }
+
+    #social-nav-a {
+        padding: 0px 0px;
+    }
+
+    #more-nav {
+        max-width: 25%;
+        padding: 44px 5px;
+    }
+
+    #more-nav-a {
+        padding: 0px 0px;
+    }
 }
 
 /* exercise page styles */
@@ -269,6 +336,8 @@
     }
 }
 
+
+
 /* header styles */
     .header {
         max-width: 100%;
@@ -322,13 +391,14 @@
     
     .nav-item a {
         color: #f8f9fa;
-        padding: 20px 32px;
+        padding: 20px 45px;
         text-decoration: none;
         align-self: center;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
         font-size: 16px;
         font-weight: 500;
+        letter-spacing: 1.5px;
     }
     
     .nav-item:hover a {
@@ -436,7 +506,7 @@
 
 
 /* footer styles */
-.footer-wrap {
+#footer-wrap {
     max-width: 100%;
     padding: 50px 50px;
     background-color: #343a40;
@@ -446,7 +516,7 @@
     align-items: center;
 }
 
-.footer-left {
+#footer-left {
     width: 100%;
     max-width: 27%;
     display: flex;
@@ -467,6 +537,7 @@
     color: #f8f9fa;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
+    letter-spacing: 1.5px;
 }
 
 .footer-names {
@@ -486,8 +557,24 @@
     font-size: 16px;
 }
 
+.contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info p {
+    margin: unset; 
+    font-weight: 400;
+    text-decoration: none;
+    color: #f8f9fa;
+    font-family: 'Quicksand', sans-serif!important;
+    font-size: 16px;
+}
 /* footer menu styles */
-.footer-center {
+#footer-center {
     display: flex;
     justify-content: center;
     align-self: stretch;
@@ -515,6 +602,7 @@
     color: #f8f9fa;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
+    letter-spacing: 1.5px;
   }
 
   .nav-menu {
@@ -545,7 +633,7 @@
   }
 
 /* Newsletter form styles */
-.footer-right {
+#footer-right {
     width: 100%;
     max-width: 27%;
     display: flex;
@@ -573,6 +661,7 @@
     color: #f8f9fa;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
+    letter-spacing: 1.5px;
 }
 
 .newsletter-form {
@@ -610,7 +699,7 @@
 /* Footer responsiveness */
 /* Screens less than 992px */
 @media (max-width: 991px) {
-    .footer-wrap {
+    #footer-wrap {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -618,16 +707,16 @@
       gap: 30px;
     }
   
-    .footer-left, .footer-center, .footer-right {
+    #footer-left, #footer-center, #footer-right {
       max-width: 100%;
       text-align: center;
     }
   
-    .footer-left {
+    #footer-left {
       row-gap: 20px;
     }
   
-    .footer-center {
+    #footer-center {
       margin-top: 20px;
     }
 
@@ -638,17 +727,17 @@
   
   /* Screens less than 786px */
   @media (max-width: 785px) {
-    .footer-left, .footer-center, .footer-right {
+    #footer-left, #footer-center, #footer-right {
       width: 100%;
     }
   
-    .footer-wrap {
+    #footer-wrap {
       flex-wrap: wrap;
       gap: 20px;
       padding: 20px;
     }
   
-    .footer-left {
+    #footer-left {
       row-gap: 15px;
     }
   
@@ -660,16 +749,16 @@
   
   /* Screens less than 480px */
   @media (max-width: 479px) {
-    .footer-wrap {
+    #footer-wrap {
       padding: 10px;
     }
   
-    .footer-left {
+    #footer-left {
       width: 100%;
       row-gap: 10px;
     }
   
-    .footer-center {
+    #footer-center {
       width: 100%;
     }
   
